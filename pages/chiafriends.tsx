@@ -2,10 +2,10 @@ import * as React from 'react';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Modal from 'react-modal';
-import RarityList from './components/RarityList';
-import Token from './components/Token';
-import { rarityStore } from './helpers/rarity';
-import { modalStyles } from './utils/styles';
+import RarityList from '../chiafriends/components/RarityList';
+import Token from '../chiafriends/components/Token';
+import { rarityStore } from '../chiafriends/helpers/rarity';
+import { modalStyles } from '../chiafriends/utils/styles';
 
 const Home: NextPage = ({ traits, count, intialTokens, meta }: any) => {
   const router = useRouter();
